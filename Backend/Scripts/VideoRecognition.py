@@ -1,11 +1,10 @@
 import cv2  
 
 cap = cv2.VideoCapture('SteveJobsCut.mp4')
-face_cascade = cv2.CascadeClassifier('/opt/homebrew/Cellar/opencv/4.9.0_7/share/opencv4/haarcascades/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('../opencv/opencv/data/haarcascades/haarcascade_frontalface_default.xml')
 #The above points to the harrcascade algorithm folder. It is tuned for my laptop, but the location might be different
 #in your machine. Since we arent using a container, just place the file path to the harrcascade, which is inside
 #your opencv installation 
-
 
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # CV has a video write method that outputs various codecs
 out = cv2.VideoWriter('CutVideo.mp4', fourcc, 20.0, (int(cap.get(3)), int(cap.get(4))))
