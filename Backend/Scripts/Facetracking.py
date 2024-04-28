@@ -13,7 +13,7 @@ face_cascade = cv2.CascadeClassifier('../opencv/opencv/data/haarcascades/haarcas
 #Starts the algorithm/accesses it.
 
 if face_cascade.empty():
-    print("Error loading cascade")
+    print("Error in cascade")
     exit()
 # Error handling
     
