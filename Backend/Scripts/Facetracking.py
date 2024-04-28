@@ -25,7 +25,7 @@ output_size = (500, 500)
 #Ok so this is a weird solution. Previously, there was the problem of the Haar cascade zooming in too tighttly
 #on the persons face, making it uncomfortable. Here, its a slider percentage instead, which
 #adjusts the buffer of the video accordingly. Setthing this to 1 has a generous buffer around the face,
-#setting it to 0 leaves no buffer. Keep the value between 1 and 0, as larger values distort the output and spit out a large file.
+#setting it to 0 leaves no buffer. Keep the value between 1 and 0, as larger values distort the output.
 buffer_percentage = 0.5
 
 
